@@ -35,9 +35,9 @@ is_ws_connected = False
 websocket_connection = None
 
 # --- Twilio (optional) ---
-app.config['TWILIO_ACCOUNT_SID'] = os.environ.get('TWILIO_ACCOUNT_SID', "AC862b3b690208d7be9966f44a4e726ed3")
-app.config['TWILIO_AUTH_TOKEN'] = os.environ.get('TWILIO_AUTH_TOKEN', "0d2612815c908331b243fda2d56dd1aa")
-app.config['TWILIO_PHONE_NUMBER'] = os.environ.get('TWILIO_PHONE_NUMBER', "+14787766454")
+app.config['TWILIO_ACCOUNT_SID'] = os.environ.get('TWILIO_ACCOUNT_SID', "")
+app.config['TWILIO_AUTH_TOKEN'] = os.environ.get('TWILIO_AUTH_TOKEN', "")
+app.config['TWILIO_PHONE_NUMBER'] = os.environ.get('TWILIO_PHONE_NUMBER', "")
 if app.config['TWILIO_ACCOUNT_SID'] != "YOUR_SID_HERE":
     twilio_client = Client(app.config['TWILIO_ACCOUNT_SID'], app.config['TWILIO_AUTH_TOKEN'])
 else:
