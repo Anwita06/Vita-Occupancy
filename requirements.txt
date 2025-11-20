@@ -1,0 +1,8 @@
+Flask
+Flask-SQLAlchemy
+Flask-Login
+gunicorn
+psycopg2-binary  # Required for connecting to Postgres
+Werkzeug
+python-dotenv # Optional, for local testing with .env file
+Twilio
